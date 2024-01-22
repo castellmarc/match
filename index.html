@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerca de Paraula</title>
+</head>
+<body>
+
+  <label for="paraulaCercada">Cerca la paraula:</label>
+  <input type="text" id="paraulaCercada" placeholder="Introdueix la paraula">
+
+  <label for="numeroSelector">Número de síl·labes:</label>
+  <select id="numeroSelector">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5+</option>
+    <!-- Pots afegir altres opcions segons les teves necessitats -->
+  </select>
+
+  <label for="rimaSelector">Selecciona la rima:</label>
+  <select id="rimaSelector">
+    <option value="Consonant">Consonant</option>
+    <option value="assonant">Assonant</option>
+  </select>
+
+  <label for="categoriaSelector">Comença per:</label>
+  <select id="categoriaSelector">
+    <option value="indiferent">Indiferent</option>
+    <option value="vocal+h">Vocal + H</option>
+    <option value="consonant">Consonant</option>
+  </select>
+
+  <button id="cercaButton">Cerca</button>
+
+  <div id="resultats"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
